@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 简明指南与访问提醒</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+            background-color: #f8f6f2;
+            color: #2c2c2c;
+            line-height: 1.7;
+        }
+        /* 深色头图 */
+        .hero {
+            background: linear-gradient(145deg, #1a1e2b 0%, #2b3040 100%);
+            padding: 4rem 1.5rem 3.5rem;
+            text-align: center;
+            color: #edede9;
+            border-bottom: 1px solid #3f4457;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -40%;
+            left: -10%;
+            width: 160%;
+            height: 140%;
+            background: radial-gradient(ellipse at 30% 60%, rgba(126, 175, 230, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-bottom: 0.65rem;
+            position: relative;
+            z-index: 1;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 580px;
+            margin: 0 auto;
+            opacity: 0.8;
+            font-weight: 300;
+            position: relative;
+            z-index: 1;
+        }
+        .hero small {
+            display: block;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            opacity: 0.6;
+            letter-spacing: 1px;
+        }
+        /* 正文区 浅色 */
+        .content {
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem 4rem;
+        }
+        .article-title {
+            font-size: 1.9rem;
+            font-weight: 500;
+            margin-bottom: 0.8rem;
+            color: #1f232e;
+            border-left: 4px solid #b5895c;
+            padding-left: 1rem;
+        }
+        .lead {
+            font-size: 1.1rem;
+            color: #4e4e4e;
+            margin-bottom: 2.2rem;
+            line-height: 1.8;
+            border-bottom: 1px solid #e0dbd0;
+            padding-bottom: 1.2rem;
+        }
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 2.5rem 0 1rem 0;
+            color: #2d313f;
+        }
+        .content p {
+            margin-bottom: 1.4rem;
+            text-align: justify;
+        }
+        a {
+            color: #b4834c;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+        a:hover {
+            color: #8d663b;
+            border-bottom-color: #b4834c;
+        }
+        /* 引用提示 */
+        .tip-block {
+            background: #f2efe8;
+            border-left: 5px solid #b5895c;
+            padding: 1.6rem 1.8rem;
+            margin: 2rem 0 2.2rem;
+            border-radius: 0 12px 12px 0;
+            font-style: normal;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+        }
+        .tip-block p {
+            margin-bottom: 0.3rem;
+        }
+        .tip-block .tip-label {
+            display: inline-block;
+            background: #b5895c;
+            color: #f5f1e9;
+            font-size: 0.75rem;
+            font-weight: 500;
+            padding: 0.1rem 1rem;
+            border-radius: 20px;
+            letter-spacing: 1px;
+            margin-bottom: 0.6rem;
+        }
+        .faq-mini {
+            margin: 2.8rem 0 1.2rem;
+            padding-top: 1.2rem;
+            border-top: 1px dashed #d6cfbf;
+        }
+        .faq-item {
+            margin-bottom: 1.2rem;
+        }
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            color: #3a3f4e;
+            margin-bottom: 0.2rem;
+        }
+        .faq-item p {
+            margin-bottom: 0.3rem;
+            color: #4b4b4b;
+        }
+        .visit-sentence {
+            margin: 2.4rem 0 1.2rem;
+            padding: 1.2rem 1.8rem;
+            background: #eae7de;
+            border-radius: 30px 8px 30px 8px;
+            font-size: 1.05rem;
+            text-align: center;
+            color: #2b2b2b;
+        }
+        .footer-note {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #848484;
+            margin-top: 3.5rem;
+            border-top: 1px solid #e2ddd0;
+            padding-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8rem; }
+            .article-title { font-size: 1.5rem; }
+            .content { padding: 2rem 1.2rem 3rem; }
+            .tip-block { padding: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 深色头图 -->
+    <header class="hero">
+        <h1>爱游戏 · 简明指南</h1>
+        <p>从日常出发，理清方向、安全抵达。<br>一份温和的访问提醒与使用思路。</p>
+        <small>—— 轻量 · 清晰 · 可靠</small>
+    </header>
+
+    <!-- 正文区 -->
+    <main class="content">
+
+        <h2 class="article-title">一篇关于「爱游戏」的短记</h2>
+        <div class="lead">
+            无论你只是偶尔放松，还是希望了解更多游戏相关的内容，<strong>明确入口、留意细节</strong>总会让过程更顺畅。这里没有复杂的指南，只有几条朴素建议和一点必要的提醒。
+        </div>
+
+        <h3 class="section-title">① 从何处开始</h3>
+        <p>
+            很多朋友会直接搜索某个名称，但网络环境里同名或近似站点并不少见。如果你希望直接访问可靠的信息源，不妨记住一个简单的锚点：
+            在浏览器地址栏输入 <strong>mainhub-igame.com</strong>，这就是一直提到的 
+            <a href="https://mainhub-igame.com">爱游戏</a> 所对应的位置。它不花哨，但足够直接。
+        </p>
+        <p>
+            当然，你也可以通过书签、收藏夹或者信任的推荐链接进入。关键是保持路径的唯一性——每次都能到达同一个地方，而不是在近似域名中徘徊。
+        </p>
+
+        <h3 class="section-title">② 界面与节奏</h3>
+        <p>
+            <a href="https://mainhub-igame.com">爱游戏</a> 的页面布局偏向简洁，没有过多的弹窗或跳转。你看到的模块基本围绕着内容本身：列表、详情、导航。建议初次访问时花一两分钟浏览整体结构，留意顶部菜单和分类入口，后续使用就会更顺手。
+        </p>
+        <p>
+            值得一提的是，部分页面可能会根据你的浏览习惯做一些微小的调整，比如推荐相近内容。这并不复杂，也不必担心信息过载——所有变化都基于你当前所在的区域。
+        </p>
+
+        <div class="tip-block">
+            <span class="tip-label">📌 提醒</span>
+            <p><strong>请留意网址拼写：</strong> 主域名是 mainhub-igame.com，留意 l 与 1 的区别、字母顺序。如果看到类似但略有不同的链接，请先确认再访问。</p>
+            <p style="margin-top:0.6rem;">另外，收藏时建议直接保存完整链接，避免通过第三方搜索页跳转。</p>
+        </div>
+
+        <h3 class="section-title">③ 常见场景与思路</h3>
+        <p>
+            <strong>场景一 · 信息查阅：</strong> 想了解某款游戏的大致评价、背景或更新情况。你可以在站内搜索关键词，或者浏览分类列表。内容通常以短文或摘要形式呈现，没有太多夸张措辞。
+        </p>
+        <p>
+            <strong>场景二 · 日常浏览：</strong> 如果只是想随便看看，可以关注首页的最近更新或推荐条目。节奏由你自己控制，不必一次性读完所有内容。
+        </p>
+        <p>
+            <strong>场景三 · 确认与反馈：</strong> 某些页面底部可能会有简单的联系或反馈入口。如果遇到问题或发现了明显错误，可以通过那些渠道温和地提出。毕竟任何站点都需要持续打磨。
+        </p>
+
+        <!-- FAQ 摘要 -->
+        <div class="faq-mini">
+            <h3 class="section-title" style="margin-top:0;">❓ 几个小问题</h3>
+
+            <div class="faq-item">
+                <strong>Q：这个网站需要注册才能看吗？</strong>
+                <p>大部分内容直接可见，不需要注册或登录。部分互动或收藏功能可能涉及账号，但这取决于后续的功能部署。</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q：移动端访问体验如何？</strong>
+                <p>页面已经做了基本的响应式适配，在手机或平板上阅读段落、点击链接都没有太大问题。如果显示异常，可以尝试旋转屏幕或刷新。</p>
+            </div>
+            <div class="faq-item">
+                <strong>Q：内容更新频率高吗？</strong>
+                <p>更新节奏并不固定，但会保持内容质量优先。你每次访问都可能看到一些新条目，但不会太过频繁。</p>
+            </div>
+        </div>
+
+        <!-- 访问句：自然嵌入链接 -->
+        <div class="visit-sentence">
+            🧭 如果你准备好了，不妨现在就去 
+            <a href="https://mainhub-igame.com">爱游戏</a> 
+            看一眼。安静、直接，没有任何多余的打扰。
+        </div>
+
+        <p style="color: #5c5c5c; font-size: 0.96rem; margin-top: 2rem;">
+            最后想说的是，任何网站都只是工具或窗口，重要的是你带着什么样的期待去使用它。保持观察、保持怀疑、也保持开放——这大概是最稳妥的访问心态。
+        </p>
+
+        <div class="footer-note">
+            爱游戏 · 简明访问指南 —— 一次阅读，长久受用
+        </div>
+
+    </main>
+
+</body>
+</html>
