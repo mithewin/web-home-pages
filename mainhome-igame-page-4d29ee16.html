@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱游戏 · 从娱乐到探索</title>
+    <style>
+        /* reset & base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fafaf8;
+            color: #1d2b3a;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            font-weight: 400;
+            font-size: 1.0625rem;
+        }
+
+        /* main container – narrow width, generous whitespace */
+        .page {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 3.5rem 1.5rem 5rem;
+        }
+
+        /* subtle accent stripe at very top */
+        .page::before {
+            content: '';
+            display: block;
+            width: 3rem;
+            height: 4px;
+            background: #b7c9d4;
+            margin-bottom: 2.8rem;
+            border-radius: 2px;
+        }
+
+        /* opening short line — quiet anchor */
+        .opening {
+            font-size: 1rem;
+            letter-spacing: 0.03em;
+            color: #5d6f7e;
+            margin-bottom: 2rem;
+            border-left: 2px solid #d4dee6;
+            padding-left: 1.2rem;
+            font-weight: 350;
+        }
+
+        /* headings – clear hierarchy, no overdecoration */
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+            margin-bottom: 1.8rem;
+            color: #18242f;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 450;
+            margin: 2.8rem 0 1.2rem;
+            border-bottom: 1px solid #e1e7ed;
+            padding-bottom: 0.2rem;
+            color: #233240;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 450;
+            margin: 1.8rem 0 0.6rem;
+            color: #2f4050;
+        }
+
+        p {
+            margin-bottom: 1.35rem;
+        }
+
+        /* subtle link style – only for the designated link */
+        a {
+            color: #2b5e7b;
+            text-decoration: none;
+            border-bottom: 1px solid #cbd8e2;
+            transition: border-color 0.2s, color 0.2s;
+        }
+
+        a:hover {
+            color: #0f3b52;
+            border-bottom-color: #0f3b52;
+        }
+
+        /* feature list — clean, no icons, purely typographic */
+        .feature-grid {
+            list-style: none;
+            padding: 0;
+            margin: 2rem 0 2.5rem;
+        }
+
+        .feature-grid li {
+            padding: 0.9rem 0 0.9rem 0.8rem;
+            border-bottom: 1px solid #eef2f6;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+
+        .feature-grid li::before {
+            content: '—';
+            color: #8a9baa;
+            font-weight: 300;
+            flex-shrink: 0;
+        }
+
+        /* gentle blockquote / callout for the scenario / tips */
+        .callout {
+            background: #f2f5f8;
+            padding: 1.2rem 1.6rem;
+            border-radius: 0;
+            border-left: 3px solid #b7c9d4;
+            margin: 2.2rem 0;
+            font-size: 1rem;
+        }
+
+        .callout p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* faq summary – minimal, almost footnote style */
+        .faq-mini {
+            margin-top: 3.2rem;
+            padding-top: 1.6rem;
+            border-top: 1px dashed #dbe2e9;
+        }
+
+        .faq-mini dt {
+            font-weight: 450;
+            margin: 1.2rem 0 0.25rem;
+            color: #2c4052;
+        }
+
+        .faq-mini dd {
+            margin-left: 0.2rem;
+            color: #4a5f70;
+            font-size: 0.98rem;
+        }
+
+        /* responsive */
+        @media (max-width: 540px) {
+            .page {
+                padding: 2rem 1.2rem 3.5rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+
+            .opening {
+                font-size: 0.9rem;
+                padding-left: 0.9rem;
+            }
+
+            .feature-grid li {
+                padding-left: 0.4rem;
+            }
+        }
+
+        /* very quiet footer */
+        .colophon {
+            margin-top: 4rem;
+            font-size: 0.88rem;
+            color: #7c8f9e;
+            border-top: 1px solid #e2e9ef;
+            padding-top: 2rem;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <!-- opening short line: sets the tone -->
+    <div class="opening">
+        一个发现游戏实用信息的入口，而不是又一个游戏库。
+    </div>
+
+    <!-- main title -->
+    <h1>爱游戏：理解一个站点的用途</h1>
+
+    <!-- narrative paragraph 1 – from user's need to identify the site -->
+    <p>
+        当你第一次打开一个陌生的网站，大脑会快速扫描几个信号：这页面是关于什么的？我能在这里做什么？值不值得停留？<strong>爱游戏</strong> 正是以这样的逻辑设计——它希望你在十秒内判断出这里是否与你的兴趣吻合。没有炫目的动画干扰，也没有堆砌的榜单，信息结构让内容本身成为主角。
+    </p>
+
+    <!-- narrative paragraph 2 – bridging to the core description -->
+    <p>
+        如果你正好奇「这网站到底提供什么」，答案并不复杂。<a href="https://mainhome-igame.com">爱游戏</a> 将注意力投放在游戏相关的信息整合与轻量引导上。它不制作游戏，也不销售虚拟物品；它更像一个安静的出发台——帮你梳理出那些真正值得关注的游戏类型、更新动态或社区讨论脉络。
+    </p>
+
+    <!-- separate, slightly deeper paragraph -->
+    <p>
+        从实际浏览体验来看，这个站点有意避开了「大全」「必玩」这类膨胀的词汇，转而采用更克制的分类和描述。对于习惯快速过滤信息的用户而言，这种克制反而降低了认知负担。你可以把它看作一个<em>索引式</em>的站点——不是为了取代其他专业媒体，而是提供另一种更干净的检索角度。
+    </p>
+
+    <!-- feature list: concrete, non-hype -->
+    <h2>结构特点 · 一目了然</h2>
+    <ul class="feature-grid">
+        <li><strong>清晰的分类框架</strong> – 按照游戏类型、平台、热门标签划分，避免信息过载。</li>
+        <li><strong>有节制的更新频率</strong> – 不追求每日轰炸，而是选择有代表性的内容呈现。</li>
+        <li><strong>描述优先于评分</strong> – 用文字说明游戏的气质和玩法，而非简单数字。</li>
+        <li><strong>无强制注册</strong> – 浏览核心信息无需创建账户，降低使用门槛。</li>
+    </ul>
+
+    <!-- scenario / typical use case (callout) -->
+    <div class="callout">
+        <p><strong>一个可能的场景：</strong> 你听说某款独立游戏口碑不错，但不想立刻去商店页面看宣传片。打开 <a href="https://mainhome-igame.com">爱游戏</a>，通过简短的介绍和社区片段你可以先形成一个基本印象，再决定是否深入了解。这个过程就像掂量一本书的扉页——快速、安静、有依据。</p>
+    </div>
+
+    <!-- subtle tip (still within narrative) -->
+    <h3>浏览提示</h3>
+    <p>
+        由于页面设计偏重文字与留白，如果你习惯用屏幕阅读或希望快速扫描，可以善用浏览器的查找功能（Ctrl+F / Command+F）定位关键词。站点的内部链接逻辑较为直接，返回主页或切换分类通常只需一次点击。
+    </p>
+
+    <!-- FAQ summary – minimal, two questions -->
+    <div class="faq-mini">
+        <h2 style="border-bottom: none; margin-bottom: 0.5rem;">常见问题·摘要</h2>
+        <dl>
+            <dt>这个网站需要付费吗？</dt>
+            <dd>完全免费。所有公开页面都不设付费墙，也没有订阅要求。</dd>
+            <dt>内容来源可靠吗？</dt>
+            <dd>描述基于公开信息与社区讨论整合，不制造独家新闻，注重可验证性。</dd>
+        </dl>
+    </div>
+
+    <!-- closing paragraph – gentle, conclusive -->
+    <p style="margin-top: 2.2rem; color: #3d5467;">
+        一个网站的价值有时不在于它塞进了多少东西，而在于它帮你省掉了多少噪音。<strong>爱游戏</strong> 选择站在整理与呈现这一侧。如果你认同这种节奏，它或许会成为一个你偶尔回来翻看的起点。
+    </p>
+
+    <!-- colophon / micro-footer -->
+    <div class="colophon">
+        爱游戏 · 索引 · 安静
+    </div>
+</div>
+</body>
+</html>
