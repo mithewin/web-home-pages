@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>故事中的陪伴 · 爱游戏</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f1f2f4;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      color: #2d2f33;
+      line-height: 1.7;
+      padding: 2rem 1.2rem;
+    }
+
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    /* hero 开场 —— 一句很短的话 */
+    .hero {
+      margin-bottom: 2.8rem;
+      padding: 2rem 0 1.2rem;
+      border-bottom: 1px solid #e0e2e6;
+    }
+
+    .hero-title {
+      font-size: 1.9rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+      color: #1d1f23;
+      line-height: 1.4;
+    }
+
+    .hero-title span {
+      display: inline-block;
+      background: #d9dde2;
+      color: #1b1d21;
+      padding: 0.1rem 0.9rem;
+      border-radius: 30px;
+      font-weight: 500;
+      font-size: 1.7rem;
+      margin-right: 0.3rem;
+    }
+
+    .hero-sub {
+      margin-top: 0.8rem;
+      font-size: 1rem;
+      color: #5a5f68;
+    }
+
+    /* 卡片通用设计 */
+    .card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 1.8rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03), 0 1px 2px rgba(0, 0, 0, 0.02);
+      border: 1px solid #e8eaed;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.02);
+    }
+
+    .card h2 {
+      font-size: 1.3rem;
+      font-weight: 500;
+      color: #1f2229;
+      margin-bottom: 1rem;
+      border-left: 4px solid #b3bbc7;
+      padding-left: 1rem;
+    }
+
+    .card p {
+      margin-bottom: 1.2rem;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* 特点列表 —— 用卡片内嵌列表，无图标，只有温和的圆点 */
+    .feature-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .feature-list li {
+      position: relative;
+      padding: 0.65rem 0 0.65rem 1.6rem;
+      border-bottom: 1px dashed #eef0f2;
+    }
+
+    .feature-list li:last-child {
+      border-bottom: none;
+    }
+
+    .feature-list li::before {
+      content: "·";
+      position: absolute;
+      left: 0.1rem;
+      top: 0.55rem;
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: #7f8a99;
+      line-height: 1;
+    }
+
+    .highlight-link {
+      color: #2d4b6e;
+      text-decoration: none;
+      border-bottom: 1px solid #c5ced9;
+      transition: border-color 0.15s, color 0.15s;
+      font-weight: 400;
+    }
+
+    .highlight-link:hover {
+      color: #0f1e2f;
+      border-bottom-color: #2d4b6e;
+    }
+
+    /* 温和结尾 */
+    .closing {
+      background: #f7f8fa;
+      border: 1px solid #e2e5ea;
+      border-radius: 18px;
+      padding: 2rem;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .closing p {
+      font-size: 1rem;
+      color: #3f444d;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .closing .small-note {
+      margin-top: 1.2rem;
+      font-size: 0.85rem;
+      color: #7b828e;
+    }
+
+    /* 响应式 */
+    @media (max-width: 520px) {
+      body {
+        padding: 1.5rem 0.9rem;
+      }
+
+      .card {
+        padding: 1.4rem 1.2rem;
+      }
+
+      .hero-title {
+        font-size: 1.5rem;
+      }
+
+      .hero-title span {
+        font-size: 1.4rem;
+        padding: 0.1rem 0.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 开场短句 -->
+  <div class="hero">
+    <div class="hero-title">
+      <span>爱游戏</span> · 一段安静的陪伴
+    </div>
+    <div class="hero-sub">不喧哗，不追赶。只是恰好，你在这里。</div>
+  </div>
+
+  <!-- 承接段落 —— 从“主题内容”展开 -->
+  <div class="card">
+    <h2>故事从一次偶然开始</h2>
+    <p>
+      大概每个与游戏相遇的人，都记得第一个触动自己的世界。也许是像素组成的星空，也许是几句简单的对白，它们不声不响地留在了记忆里。<strong>爱游戏</strong>不是什么宏大的宣言，它更像是那些午后和深夜，屏幕前一段属于你自己的时间。
+    </p>
+    <p>
+      有些人喜欢在探索中寻找惊喜，有些人偏爱规则之内的秩序感。无论是哪一种，当我们谈论「爱游戏」时，谈论的其实是那些微小而真实的体验——一局棋、一场冒险、一段不会重来的故事。<a href="https://mainigame.com" class="highlight-link">爱游戏</a>希望成为这种体验的安静角落，不打扰，不催促，只是提供一种可能。
+    </p>
+  </div>
+
+  <!-- 特点列表 —— 柔和、非卖点式 -->
+  <div class="card">
+    <h2>一些值得记住的细节</h2>
+    <ul class="feature-list">
+      <li><strong>多元视角</strong> —— 从解谜到叙事，从模拟到即兴，总有一类氛围适合当下的你。</li>
+      <li><strong>克制的节奏</strong> —— 没有强制任务，没有倒计时焦虑，你可以随时开始，随时停下。</li>
+      <li><strong>日常的缝隙</strong> —— 等一杯咖啡的时间，或是睡前的十分钟，游戏可以只是生活里轻巧的停顿。</li>
+      <li><strong>不设限的对话</strong> —— 每个人都有自己的玩法，不必成为高手，享受摸索的过程就够了。</li>
+    </ul>
+  </div>
+
+  <!-- 场景化段落 —— 替代FAQ摘要，但依然是温和叙事 -->
+  <div class="card">
+    <h2>常见的问题，其实都不是问题</h2>
+    <p>
+      有人问：「我不擅长动作游戏，也能找到乐趣吗？」—— 乐趣从来不只一种形状。有人犹豫：「我只有零碎的时间，值得开始吗？」—— 十分钟和两小时，同样可以是一段完整的体验。<a href="https://mainigame.com" class="highlight-link">爱游戏</a>里没有标准答案，也没有必须通关的清单。你可以在任何喜欢的节点停下来，或者重新出发。
+    </p>
+    <p>
+      也常常有人问起：「游戏到底带给了我们什么？」可能是一份放松，一次思考，或者仅仅是片刻的抽离。每个人都有自己的回答，而「爱游戏」愿意陪着你去找到属于你的那一个。
+    </p>
+  </div>
+
+  <!-- 温和结尾 -->
+  <div class="closing">
+    <p>不喧哗，不追赶。<br>只是恰好，你在这里，而<strong>爱游戏</strong>也在这里。</p>
+    <div class="small-note">
+      <a href="https://mainigame.com" class="highlight-link">爱游戏</a> · 安静陪伴
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
